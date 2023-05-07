@@ -13,7 +13,7 @@ const contactSlice = createSlice({
   name: 'contacts',
   
   initialState: {
-  contats: [],
+  contacts: [],
   isLoading: false,
     error: null,
 },
