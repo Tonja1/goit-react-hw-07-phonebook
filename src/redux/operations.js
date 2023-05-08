@@ -4,7 +4,7 @@ import { toast } from "react-toastify";
 
 
 
-axios.defaults.baseURL = 'https://6458b9218badff578ef8de5e.mockapi.io';
+axios.defaults.baseURL = 'https://6459422c4eb3f674df8ba568.mockapi.io';
 
 export const fetchContacts = createAsyncThunk(
     'contacts/fetchAll',
@@ -33,9 +33,9 @@ export const deleteContact = createAsyncThunk(
 
 export const addContact = createAsyncThunk(
     'contacts/add',
-    async ({ name, number }, thunkAPI) => {
+    async ({ name, phone }, thunkAPI) => {
         try {
-            const response = await axios.post('/contacts', { name, number });
+            const response = await axios.post('/contacts', { name, phone });
             toast.success(`This ${name} contact is added to phonebook!`);
             return response.data;
         } catch (error) {
