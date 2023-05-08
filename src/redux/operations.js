@@ -4,7 +4,7 @@ import { toast } from "react-toastify";
 
 
 
-axios.defaults.baseURL = 'https://6457d7cf0c15cb1482125ae1.mockapi.io';
+axios.defaults.baseURL = 'https://6458b9218badff578ef8de5e.mockapi.io';
 
 export const fetchContacts = createAsyncThunk(
     'contacts/fetchAll',
